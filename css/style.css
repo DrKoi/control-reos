@@ -3,7 +3,7 @@
     width: auto;
     height: 100px;
 }
-.leve {color: green}
-.grave {color: yellow}
+.leve {color: yellow}
+.grave {color: orange}
 .peligroso {color: red}
 .enemigo {color: brown}
