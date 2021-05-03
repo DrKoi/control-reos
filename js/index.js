@@ -38,7 +38,10 @@ const cargarTabla = ()=>{
       tdNro.innerText = i + 1;
       tdNombre.innerText = p.nombre + " " + p.apellido;
       tdDescripcion.innerHTML = p.descripcion;
-      tdCiudad.innerText = p.ciudad;
+      
+      let city = p.ciudad - 1;
+
+      tdCiudad.innerText = Ciudades[city];
 
       let gravedad = document.createElement("i");
       
@@ -67,21 +70,22 @@ const cargarTabla = ()=>{
 
 const Ciudades = ["Valparaíso", "Santiago", "Viña del Mar", "La Serena", "Quilpué", "Villa Alemana", "Olmué", "Quillota"];
 const cargarCiudades = ()=>{
-  let selectCiudades = document.querySelector("#ciudad-select");
+  const selectCiudades = document.querySelector("#ciudad-select");
   selectCiudades.innerHTML = "";
 
-  for (let i = 0; i < Reos.length; ++i){
+  for (let i = 0; i < Ciudades.length; ++i){
     let p = Ciudades[i];
-    let select = document.createElement("select");
+    let optioncity = document.createElement("option");
+    
+    let valor = i + 1;
+    
+    optioncity.value = valor;
+    optioncity.text = p;
+    
 
-    select.appendChild(p);
+    selectCiudades.appendChild(optioncity);
 
-    selectCiudades.appendChild(select);
-
-  };
-
-
-
+  }
 
 };
 
