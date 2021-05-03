@@ -65,9 +65,20 @@ const cargarTabla = ()=>{
   }
 };
 
+const Ciudades = ["Valparaíso", "Santiago", "Viña del Mar", "La Serena", "Quilpué", "Villa Alemana", "Olmué", "Quillota"];
 const cargarCiudades = ()=>{
   let selectCiudades = document.querySelector("#ciudad-select");
+  selectCiudades.innerHTML = "";
 
+  for (let i = 0; i < Reos.length; ++i){
+    let p = Ciudades[i];
+    let select = document.createElement("select");
+
+    select.appendChild(p);
+
+    selectCiudades.appendChild(select);
+
+  };
 
 
 
