@@ -1,0 +1,9 @@
+
+.logo {
+    width: auto;
+    height: 100px;
+}
+.leve {color: green}
+.grave {color: yellow}
+.peligroso {color: red}
+.enemigo {color: brown}
