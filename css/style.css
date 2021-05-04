@@ -1,4 +1,11 @@
 
+main {
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+.fontcode {
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    
+}
 .logo {
     width: auto;
     height: 100px;
